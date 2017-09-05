@@ -1,0 +1,25 @@
+//Colors
+$blackColor: #161616;
+$orangeColor: #f15a22;
+$bgColor: #fafafa;
+$greyColor: #aaaaaa;
+
+//Mixins
+@mixin box-shadow {
+    box-shadow: 2px 2px 3px rgba($blackColor, .15);
+}
+
+@mixin circle-box {
+    border-radius: 50%;
+}
+
+@mixin border-radius($x: .25rem) {
+    border-radius: $x;
+}
+
+//Elems
+.muted-text {
+    font-size: 1rem;
+    color: $greyColor;
+    line-height: 1.25;
+}
