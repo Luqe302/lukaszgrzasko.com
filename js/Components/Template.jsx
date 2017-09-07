@@ -2,7 +2,7 @@ import React from 'react'
 
 class Template extends React.Component {
     render() {
-        return <div classNameName="site">
+        return <div className="site">
             <div className="container">
                 <div className="row">
                     <div className="col-12">

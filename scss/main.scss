@@ -241,3 +241,38 @@ header {
         font-size: .75rem;
     }
 }
+
+
+//Projects
+
+.first-picture-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .first-picture {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 800px;
+
+        .project-image {
+            width: 800px;
+            align-self: center;
+        }
+
+        .project-wrapper {
+            position: absolute;
+            left: 10%;
+
+            .each-project {
+                min-width: 150px;
+                max-width: 150px;
+                height: 150px;
+
+                .showImage-1 {
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+}
