@@ -4,6 +4,13 @@ body {
     color: $greyColor;
     line-height: 1.5;
     background: $bgColor;
+    overflow-x: hidden;
+    transition: all .2s;
+
+    &.active-menu {
+        transform: translateX(calc(-100% + 25px + 1.5rem));
+    }
+
 }
 
 h1 {
@@ -11,6 +18,31 @@ h1 {
     font-size: 1.75rem;
     line-height: 1.1;
     color: $blackColor;
+}
+
+h2 {
+    color: $blackColor;
+    font-weight: 900;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+        content: "";
+        height: 2px;
+        width: 45px;
+        background-color: $blackColor;
+        margin-top: .6rem;
+        margin-bottom: 3rem;
+    }
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: $blackColor;
+    line-height: 1.1;
 }
 
 a {
@@ -26,6 +58,41 @@ header {
     padding: 1rem 0 2rem;
 }
 
+
+nav {
+    width: calc(100% - 25px - 1.5rem);
+    background: $blackColor;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    padding-top: calc(20px + .75rem);
+    right: 0;
+    transform: translateX(100%);
+    transition: all .3s;
+
+    .menu-wrapper {
+
+        .unclickable-link {
+            cursor: default;
+        }
+
+        ul {
+            padding-left: 1rem;
+
+            a {
+                color: $bgColor;
+                display: block;
+                padding: .75rem 0;
+                border-bottom: 1px solid lighten($blackColor, 10%);
+            }
+
+            ul {
+                background: lighten($blackColor, 5%);
+            }
+        }
+    }
+}
+
 .menu-toggler {
     cursor: pointer;
     height: 20px;
@@ -33,6 +100,8 @@ header {
     box-sizing: content-box;
     padding: .75rem;
     margin-left: auto;
+    position: relative;
+    z-index: 6;
 
     span {
         display: block;
@@ -41,6 +110,7 @@ header {
         background: $blackColor;
         border-radius: 4px;
         position: relative;
+        transition: all .2s;
 
         &::before {
             content: '';
@@ -51,6 +121,7 @@ header {
             border-radius: 4px;
             position: relative;
             top: 8px;
+            transition: all .2s;
         }
 
         &::after {
@@ -62,6 +133,7 @@ header {
             border-radius: 4px;
             position: relative;
             top: 12px;
+            transition: all .2s;
         }
     }
 }
@@ -123,23 +195,6 @@ header {
     justify-content: center;
     margin-top: 2rem;
 
-    h2 {
-        color: $blackColor;
-        font-weight: 900;
-        font-size: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        &::after {
-            content: "";
-            height: 2px;
-            width: 45px;
-            background-color: $blackColor;
-            margin-top: .6rem;
-            margin-bottom: 3rem;
-        }
-    }
 }
 
 @media (min-width: 576px) {
@@ -162,67 +217,91 @@ header {
         border-right: 3px solid grey;
         border-bottom: 3px solid grey;
         overflow: hidden;
-        display: flex;
-        justify-content: center;
         margin-bottom: 2rem;
         position: relative;
         transition: all .2s;
 
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+            position: relative;
+
+            img {
+                filter: blur(5px);
+                transition: all .3s;
+            }
+
+            &::after {
+                content: "";
+                background: rgba($blackColor, .6);
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+
         h3 {
             position: absolute;
-            top: 20%;
-            color: green;
-            font-weight: 900;
-            cursor: pointer;
+            color: $bgColor;
+            font-size: 1.5rem;
             transition: all .2s;
-
-            &:hover {
-                color: orange;
-            }
+            z-index: 2;
+            text-shadow: 2px 2px 1px $blackColor;
         }
 
-        span {
-            position: absolute;
-            top: 85%;
-            color: green;
-            font-weight: 900;
-            cursor: pointer;
-            transition: all .2s;
-
-            &:hover {
-                color: orange;
-            }
-        }
 
         @media (min-width: 992px) {
 
-            h3 {
-                visibility: hidden;
+            a img {
+                filter: blur(0px);
             }
-            span {
-                visibility: hidden;
+
+            h3, a::after {
+                opacity: 0;
             }
 
             &:hover {
                 border: 3px solid $orangeColor;
 
-                h3 {
-                    visibility: visible;
+                a img {
+                    filter: blur(5px);
                 }
-                span {
-                    visibility: visible;
+
+                h3, a::after {
+                    opacity: 1;
                 }
             }
         }
     }
 }
 
-.footer-section-1{
-    background: silver;
+footer {
+    border-top: 1px solid #ccc;
     margin-top: 7rem;
 
+    a {
+        padding: .5rem;
+    }
+
+    .icon {
+        fill: red;
+        width: 25px;
+    }
+
+    .social {
+        border-right: 1px solid #ccc;
+    }
+}
+
+.footer-section-1{
+    background: $bgDarkerColor;
+
     .contact-wrapper {
-     background-color: silver;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -273,6 +352,26 @@ header {
                     max-width: 150px;
                 }
             }
+        }
+    }
+}
+
+
+//Media
+
+@media (min-width: 576px) {
+
+    body.active-menu {
+        transform: translateX(calc(-300px));
+    }
+
+
+    nav {
+        width: 300px;
+
+        .menu-wrapper ul a {
+            padding-left: 1rem;
+
         }
     }
 }

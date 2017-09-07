@@ -37,27 +37,30 @@ class Main extends React.Component {
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <img src="images/project.png" alt="example-image"/>
-                                    <h3>Project name</h3>
-                                    <span>Zobacz</span>
+                                    <a href="#">
+                                        <img src="images/project.png" alt="example-image"/>
+                                        <h3>Project name</h3>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <img src="images/project.png" alt="example-image"/>
-                                    <h3>Project name</h3>
-                                    <span>Zobacz</span>
+                                    <a href="#">
+                                        <img src="images/project.png" alt="example-image"/>
+                                        <h3>Project name</h3>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <img src="images/project.png" alt="example-image"/>
-                                    <h3>Project name</h3>
-                                    <span>Zobacz</span>
+                                    <a href="#">
+                                        <img src="images/project.png" alt="example-image"/>
+                                        <h3>Project name</h3>
+                                    </a>
                                 </div>
                             </div>
                         </div>

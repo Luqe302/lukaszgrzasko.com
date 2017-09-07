@@ -1,48 +1,93 @@
 import React from 'react'
 
 class Template extends React.Component {
+    constructor(props){
+        super(props);
+
+        this.isActiveMenu = false;
+
+    }
+
+    toggleMenu = () => {
+
+        var body = document.querySelector('body');
+        body.className = this.isActiveMenu ? '' : 'active-menu';
+
+        this.isActiveMenu = !this.isActiveMenu;
+
+    };
+
     render() {
+
         return <div className="site">
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="menu-toggler">
-                            <span></span>
-                        </div>
-                    </div>
+            <nav id="mainNav" className="main-navigation-wrapper">
+                <div className="menu-wrapper">
+                    <ul>
+                        <li><a href="#">Strona Główna</a></li>
+                        <li><a className="unclickable-link" href="#">Projekty</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Furry</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sit</a>
+                                </li>
+                                <li>
+                                    <a href="#">NASA</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
                 </div>
-            </div>
-            <nav></nav>
-            {
-                this.props.children
-            }
-            <footer>
-                <div className="footer-section-1">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                    <div className="contact-wrapper">
-                                        <span>GH</span>
-                                        <span>LIN</span>
-                                        <span>email</span>
-                                        <span>phone</span>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+            </nav>
+            <div className="main-content-wrapper">
+                <div className="menu-toggler" onClick={this.toggleMenu}>
+                    <span></span>
                 </div>
-                <div className="footer-section-2">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="copyright-wrapper">
-                                    <span>© 2017 Łukasz Grząśko</span>
+                {
+                    this.props.children
+                }
+                <footer>
+                    <div className="footer-section-1">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-12">
+                                        <div className="contact-wrapper">
+                                            <div className="social">
+                                                <a href="#">
+                                                    <img className="icon" src="images/icon-linkdin.svg" alt="Linkdin"/>
+                                                </a>
+                                                <a href="#">
+                                                    <img className="icon" src="images/icon-github.svg" alt="Github"/>
+                                                </a>
+                                            </div>
+                                            <div className="contact">
+                                                <a href="#">
+                                                    <img className="icon" src="images/icon-message.svg" alt="e-mail"/>
+                                                </a>
+                                                <a href="#">
+                                                    <img className="icon" src="images/icon-phone.svg" alt="phone"/>
+                                                </a>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                    <div className="footer-section-2">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-12">
+                                    <div className="copyright-wrapper">
+                                        <span>© 2017 Łukasz Grząśko</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
     }
 }
