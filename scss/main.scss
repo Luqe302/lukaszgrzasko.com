@@ -83,6 +83,7 @@ header {
 
     .slogan {
         text-transform: uppercase;
+        font-size: .7rem;
     }
 
     h1 {
@@ -122,7 +123,7 @@ header {
     justify-content: center;
     margin-top: 2rem;
 
-    h3 {
+    h2 {
         color: $blackColor;
         font-weight: 900;
         font-size: 1.5rem;
@@ -167,9 +168,7 @@ header {
         position: relative;
         transition: all .2s;
 
-
-
-        span {
+        h3 {
             position: absolute;
             top: 20%;
             color: green;
@@ -182,7 +181,24 @@ header {
             }
         }
 
+        span {
+            position: absolute;
+            top: 85%;
+            color: green;
+            font-weight: 900;
+            cursor: pointer;
+            transition: all .2s;
+
+            &:hover {
+                color: orange;
+            }
+        }
+
         @media (min-width: 992px) {
+
+            h3 {
+                visibility: hidden;
+            }
             span {
                 visibility: hidden;
             }
@@ -190,6 +206,9 @@ header {
             &:hover {
                 border: 3px solid $orangeColor;
 
+                h3 {
+                    visibility: visible;
+                }
                 span {
                     visibility: visible;
                 }
@@ -198,20 +217,27 @@ header {
     }
 }
 
-.footer-wrapper {
+.footer-section-1{
+    background: silver;
     margin-top: 7rem;
-    background-color: silver;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6rem;
-    color: black;
+
+    .contact-wrapper {
+     background-color: silver;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 6rem;
+     color: black;
+    }
 }
 
-.copyright-wrapper {
+.footer-section-2 {
     background-color: $blackColor;
-    line-height: 2.25rem;
-    display: flex;
-    justify-content: center;
-    font-size: .75rem;
+
+    .copyright-wrapper {
+        line-height: 2.25rem;
+        display: flex;
+        justify-content: center;
+        font-size: .75rem;
+    }
 }
