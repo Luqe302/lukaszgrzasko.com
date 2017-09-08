@@ -37,7 +37,7 @@ class Main extends React.Component {
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <a href="#">
+                                    <a href="http://localhost:8080/#/projects">
                                         <img src="images/project.png" alt="example-image"/>
                                         <h3>Project name</h3>
                                     </a>
@@ -47,7 +47,7 @@ class Main extends React.Component {
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <a href="#">
+                                    <a href="http://localhost:8080/#/projects">
                                         <img src="images/project.png" alt="example-image"/>
                                         <h3>Project name</h3>
                                     </a>
@@ -57,7 +57,7 @@ class Main extends React.Component {
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <a href="#">
+                                    <a href="http://localhost:8080/#/projects">
                                         <img src="images/project.png" alt="example-image"/>
                                         <h3>Project name</h3>
                                     </a>

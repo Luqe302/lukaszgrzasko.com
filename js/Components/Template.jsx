@@ -1,11 +1,11 @@
 import React from 'react'
 
+
 class Template extends React.Component {
     constructor(props){
         super(props);
 
         this.isActiveMenu = false;
-
     }
 
     toggleMenu = () => {
@@ -23,21 +23,21 @@ class Template extends React.Component {
             <nav id="mainNav" className="main-navigation-wrapper">
                 <div className="menu-wrapper">
                     <ul>
-                        <li><a href="#">Strona Główna</a></li>
+                        <li onClick={this.toggleMenu}><a href="http://localhost:8080/#/">Strona Główna</a></li>
                         <li><a className="unclickable-link" href="#">Projekty</a>
-                            <ul>
+                            <ul onClick={this.toggleMenu}>
                                 <li>
-                                    <a href="#">Furry</a>
+                                    <a href="http://localhost:8080/#/projects">Furry</a>
                                 </li>
                                 <li>
-                                    <a href="#">Sit</a>
+                                    <a href="http://localhost:8080/#/projects">Sit</a>
                                 </li>
                                 <li>
-                                    <a href="#">NASA</a>
+                                    <a href="http://localhost:8080/#/projects">NASA</a>
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li onClick={this.toggleMenu}><a href="#">Kontakt</a></li>
                     </ul>
                 </div>
             </nav>
