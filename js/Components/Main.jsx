@@ -48,7 +48,7 @@ class Main extends React.Component {
                             <div className="project-wrapper">
                                 <div className="each-project">
                                     <a href="http://localhost:8080/#/projects">
-                                        <img src="images/project.png" alt="example-image"/>
+                                        <img src="images/showcase-top-sit.png" alt="example-image"/>
                                         <h3>Project name</h3>
                                     </a>
                                 </div>

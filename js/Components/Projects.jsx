@@ -40,6 +40,13 @@ class Projects extends React.Component {
                         </div>
                     </div>
                 </div>
+                <div className="row">
+                    <div className="col-12">
+                        <div className="btn-wrapper">
+                            <a className="project-btn" href="#">Live preview</a>
+                        </div>                      
+                    </div>
+                </div>
             </div>
         </div>
     }
