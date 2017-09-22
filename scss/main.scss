@@ -338,30 +338,86 @@ footer {
     display: flex;
     justify-content: center;
 
+    .project-wrapper {
+        position: absolute;
+
+        span {
+            position: absolute;
+            z-index: 2;
+            color: #24BAA0;
+            font-size: 1.5rem;
+            font-weight: 900;
+            white-space: nowrap;
+
+            &.slider-description {
+                top: -20%;
+            }
+
+            &.mobile-description {
+                bottom: -4%;
+            }
+
+            &.flex-description {
+                bottom: -4%;
+            }
+        }
+
+        .each-project {
+            min-width: 200px;
+            max-width: 200px;
+            height: 200px;
+            position: relative;
+            z-index: 1;
+
+            .showImage-1 {
+                height: 200px;
+                left: 10px;
+                position: relative;
+            }
+
+            .showImage-2 {
+                width: 200px;
+                top: -6px;
+                position: relative;
+            }
+
+            .showImage-3 {
+                height: 300px;
+                top: -30px;
+                left: -20px;
+                position: relative;
+            }
+        }
+
+        &.with-slider {
+            top: 11%;
+            left: calc(37% - 150px);
+        }
+
+        &.with-prizes {
+            left: calc(30% - 150px);
+            top: 55%;
+        }
+
+        &.with-flex {
+            right: calc(5% + 150px);
+            top: 27%;
+        }
+    }
+
     .first-picture {
         display: flex;
         justify-content: center;
         position: relative;
-        width: 800px;
+        top: -20px;
+        margin-bottom: -20px;
+        left: -150px;
+
 
         .project-image {
-            width: 800px;
+            width: 1200px;
             align-self: center;
-        }
 
-        .project-wrapper {
-            position: absolute;
-            left: 10%;
-
-            .each-project {
-                min-width: 150px;
-                max-width: 150px;
-                height: 150px;
-
-                .showImage-1 {
-                    max-width: 150px;
-                }
-            }
         }
     }
 }
