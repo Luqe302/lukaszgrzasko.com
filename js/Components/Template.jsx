@@ -27,13 +27,13 @@ class Template extends React.Component {
                         <li><a className="unclickable-link" href="#">Projekty</a>
                             <ul onClick={this.toggleMenu}>
                                 <li>
-                                    <a href="projects">Furry</a>
+                                    <a href="http://localhost:8080/#/projects">Furry</a>
                                 </li>
                                 <li>
-                                    <a href="projects">Sit</a>
+                                    <a href="http://localhost:8080/#/projects">Sit</a>
                                 </li>
                                 <li>
-                                    <a href="/projects">NASA</a>
+                                    <a href="http://localhost:8080/#/projects">NASA</a>
                                 </li>
                             </ul>
                         </li>
