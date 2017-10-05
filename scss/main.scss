@@ -113,6 +113,21 @@ nav {
     position: relative;
     z-index: 6;
 
+    &:hover {
+
+        span {
+            background-color: $orangeColor;
+
+            &::after {
+                background-color: $orangeColor;
+            }
+
+            &::before {
+                background-color: $orangeColor;
+            }
+        }
+    }
+
     span {
         display: block;
         width: 25px;
@@ -120,7 +135,7 @@ nav {
         background: $blackColor;
         border-radius: 4px;
         position: relative;
-        transition: all .2s;
+        transition: all .5s;
 
         &::before {
             content: '';
@@ -131,7 +146,7 @@ nav {
             border-radius: 4px;
             position: relative;
             top: 8px;
-            transition: all .2s;
+            transition: all .5s;
         }
 
         &::after {
@@ -143,7 +158,7 @@ nav {
             border-radius: 4px;
             position: relative;
             top: 12px;
-            transition: all .2s;
+            transition: all .5s;
         }
     }
 }
@@ -222,14 +237,14 @@ nav {
         max-width: 300px;
         height: 300px;
         @include circle-box;
-        border-top: 3px solid $blackColor;
-        border-left: 3px solid $blackColor;
-        border-right: 3px solid grey;
-        border-bottom: 3px solid grey;
+        border-top: 2px solid $greyColor;
+        border-left: 2px solid $greyColor;
+        border-right: 2px solid $bgDarkerColor;
+        border-bottom: 2px solid $bgDarkerColor;
         overflow: hidden;
         margin-bottom: 2rem;
         position: relative;
-        transition: all .2s;
+        transition: all 1s;
 
         a {
             display: flex;
@@ -242,11 +257,12 @@ nav {
                 filter: blur(5px);
                 transition: all .3s;
                 height: 300px;
+                transition: all .5s;
             }
 
             &::after {
                 content: "";
-                background: rgba($blackColor, .6);
+                // background: rgba($blackColor, .6);
                 position: absolute;
                 z-index: 1;
                 width: 100%;
@@ -260,9 +276,9 @@ nav {
             position: absolute;
             color: $bgColor;
             font-size: 1.5rem;
-            transition: all .2s;
+            transition: all 1s;
             z-index: 2;
-            text-shadow: 2px 2px 1px $blackColor;
+            text-shadow: 2px 2px 1px $orangeColor;
         }
 
 
@@ -277,7 +293,7 @@ nav {
             }
 
             &:hover {
-                border: 3px solid $orangeColor;
+                border: 2px solid $orangeColor;
 
                 a img {
                     filter: blur(5px);
@@ -345,7 +361,7 @@ footer {
         span {
             position: absolute;
             z-index: 2;
-            color: #24BAA0;
+            color: $orangeColor;
             font-size: 1.5rem;
             font-weight: 900;
             white-space: nowrap;
@@ -370,19 +386,19 @@ footer {
             position: relative;
             z-index: 1;
 
-            .sitShowimage-1 {
+            .sitShowImage-1 {
                 height: 200px;
                 left: 10px;
                 position: relative;
             }
 
-            .sitShowimage-2 {
+            .sitShowImage-2 {
                 width: 200px;
                 top: -6px;
                 position: relative;
             }
 
-            .sitShowimage-3 {
+            .sitShowImage-3 {
                 height: 300px;
                 top: -30px;
                 left: -20px;
@@ -462,6 +478,22 @@ footer {
             right: calc(5% + 150px);
             top: 27%;
         }
+
+
+        &.with-ajax {
+            top: 22%;
+            left: calc(20% - 150px);
+        }
+
+        &.with-api{
+            left: calc(39% - 150px);
+            top: 59%;
+        }
+
+        &.with-popup {
+            right: calc(-6% + 150px);
+            top: 19%;
+        }
     }
 
     .first-picture {
@@ -480,15 +512,16 @@ footer {
         }
     }
 }
+
 .btn-wrapper {
     margin-top: 5rem;
     display: flex;
     justify-content: center;
 
     .project-btn {
-            border: 1px solid #24BAA0;
+            border: 1px solid $orangeColor;
             border-radius: 12px;
-            background-color: #24BAA0;
+            background-color: $orangeColor;
             color: $bgColor;
             font-size: 1.3rem;
             padding: 1rem 3rem;
@@ -513,6 +546,61 @@ footer {
     }
 }
 
+@media (max-width: 910px) {
+
+    .first-picture-wrapper {
+
+        .project-wrapper {
+
+            &.with-slider {
+                top: 14%;
+                left: calc(13% - 50px);
+            }
+
+            &.with-prizes {
+                left: calc(18% - 50px);
+                top: 57%;
+            }
+
+            &.with-flex {
+                right: calc(-2% + 50px);
+                top: 26%;
+            }
+
+
+            &.with-score {
+                top: 12%;
+                left: calc(16% - 50px);
+            }
+
+            &.with-flash {
+                left: calc(16% - 50px);
+                top: 57%;
+            }
+
+            &.with-code{
+                right: calc(1% + 50px);
+                top: 25%;
+            }
+
+
+            &.with-api {
+                left: calc(18% - 50px);
+                top: 62%;
+            }
+
+            &.with-ajax {
+                top: 18%;
+                left: calc(11% - 50px);
+            }
+
+            &.with-popup{
+                right: calc(-1% + 50px);
+                top: 24%;
+            }
+        }
+    }
+}
 
 @media (max-width: 767px) {
 
@@ -525,17 +613,17 @@ footer {
                 min-width: 150px;
                 height: 150px;
 
-                .sitShowimage-1 {
+                .sitShowImage-1 {
                     height: 150px;
                     left: 10px;
                 }
 
-                .sitShowimage-2 {
+                .sitShowImage-2 {
                     width: 150px;
                     top: -6px;
                 }
 
-                .sitShowimage-3 {
+                .sitShowImage-3 {
                     height: 200px;
                     top: -30px;
                     left: -20px;
@@ -561,8 +649,8 @@ footer {
             }
 
             &.with-slider {
-                top: 8%;
-                left: calc(35% - 50px);
+                top: 4%;
+                left: calc(30% - 50px);
             }
 
             &.with-prizes {
@@ -587,7 +675,23 @@ footer {
             }
 
             &.with-code{
-                right: calc(-4% + 50px);
+                right: calc(5% + 50px);
+                top: 16%;
+            }
+
+
+            &.with-ajax {
+                top: 6%;
+                left: calc(27% - 50px);
+            }
+
+            &.with-api {
+                left: calc(39% - 50px);
+                top: 59%;
+            }
+
+            &.with-popup{
+                right: calc(0% + 50px);
                 top: 18%;
             }
         }
@@ -639,8 +743,24 @@ footer {
             }
 
             &.with-code{
-                right: calc(-7% + 50px);
-                top: 20%;
+                right: calc(5% + 50px);
+                top: 4%;
+            }
+
+
+            &.with-api {
+                left: calc(33% - 50px);
+                top: 52%;
+            }
+
+            &.with-ajax {
+                top: 0%;
+                left: calc(21% - 50px);
+            }
+
+            &.with-popup{
+                right: calc(0% + 50px);
+                top: -1%;
             }
         }
     }
@@ -666,18 +786,18 @@ footer {
                 min-width: 300px;
                 height: 300px;
 
-                .sitShowimage-1 {
+                .sitShowImage-1 {
                     height: 300px;
                     top: -10px;
                     left: 20px;
                 }
 
-                .sitShowimage-2 {
+                .sitShowImage-2 {
                     width: 300px;
                     top: -6px;
                 }
 
-                .sitShowimage-3 {
+                .sitShowImage-3 {
                     height: 400px;
                     top: -40px;
                     left: -20px;

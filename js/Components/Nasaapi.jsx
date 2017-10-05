@@ -16,22 +16,22 @@ class Nasaapi extends React.Component {
                 <div className="row">
                     <div className="col-12">
                         <div className="first-picture-wrapper">
-                            <div className="project-wrapper with-slider">
-                                <span className="slider-description">Dynamiczny slider</span>
+                            <div className="project-wrapper with-ajax">
+                                <span className="slider-description">"Load more" z AJAX'em</span>
                                 <div className="each-project">
-                                    <img className="nasaShowImage-1" src="images/responsive-slider.jpg" alt="responsive-slider"/>
+                                    <img className="nasaShowImage-1" src="images/nasa-responsive.jpg" alt="responsive-slider"/>
                                 </div>
                             </div>
-                            <div className="project-wrapper with-prizes">
-                                <span className="mobile-description">Responsywny layout </span>
+                            <div className="project-wrapper with-api">
+                                <span className="mobile-description">Pobieranie zdjęć z API </span>
                                 <div className="each-project">
-                                    <img className="nasaShowImage-2" src="images/responsive-mobile-view.png" alt="mobile-view"/>
+                                    <img className="nasaShowImage-2" src="images/nasa-lazy.jpg" alt="mobile-view"/>
                                 </div>
                             </div>
-                            <div className="project-wrapper with-flex">
-                                <span className="flex-description">Flexbox layout</span>
+                            <div className="project-wrapper with-popup">
+                                <span className="flex-description">Popup przy podglądzie</span>
                                 <div className="each-project">
-                                    <img className="nasaShowImage-3" src="images/flexbox-layout.png" alt="flexbox-layout"/>
+                                    <img className="nasaShowImage-3" src="images/nasa-popup.jpg" alt="flexbox-layout"/>
                                 </div>
                             </div>
                             <div className="first-picture">

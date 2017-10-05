@@ -49,7 +49,7 @@ class Main extends React.Component {
                                 <div className="each-project">
                                     <a href="http://localhost:8080/#/sitonchair">
                                         <img src="images/showcase-top-sit.png" alt="example-image"/>
-                                        <h3>SitOnChair</h3>
+                                        <h3>Sit On Chair</h3>
                                     </a>
                                 </div>
                             </div>

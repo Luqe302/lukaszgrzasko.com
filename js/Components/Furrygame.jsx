@@ -17,19 +17,19 @@ class Furrygame extends React.Component {
                     <div className="col-12">
                         <div className="first-picture-wrapper">
                             <div className="project-wrapper with-score">
-                                <span className="slider-description">Dynamiczny slider</span>
+                                <span className="slider-description">Punktacja i poziomy trudności</span>
                                 <div className="each-project">
                                     <img className="furryShowImage-1" src="images/furry-score.jpg" alt="responsive-slider"/>
                                 </div>
                             </div>
                             <div className="project-wrapper with-flash">
-                                <span className="mobile-description">Responsywny layout </span>
+                                <span className="mobile-description">Animacje CSS</span>
                                 <div className="each-project">
                                     <img className="furryShowImage-2" src="images/furry-flash.jpg" alt="mobile-view"/>
                                 </div>
                             </div>
                             <div className="project-wrapper with-code">
-                                <span className="flex-description">Flexbox layout</span>
+                                <span className="flex-description">Obiektowa konstrukcja gry</span>
                                 <div className="each-project">
                                     <img className="furryShowImage-3" src="images/furry-code.jpg" alt="flexbox-layout"/>
                                 </div>
