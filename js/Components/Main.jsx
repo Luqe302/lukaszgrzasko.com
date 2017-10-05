@@ -10,7 +10,7 @@ class Main extends React.Component {
                         <div className="col-12">
                             <div className="lead-presentation">
                                 <div className="profile-photo">
-                                    <img src="images/lukasz-grzasko.jpg" alt="Łukasz Grząśko profile photo"/>
+                                    <img src="images/lukasz-grzasko.png" alt="Łukasz Grząśko profile photo"/>
                                 </div>
                                 <div className="slogan muted-text">front-end developer that focuses on using HTML, CSS and Javascript to build beautiful websites and user-friendly environments for web applications</div>
                                 <h1>I'm a <span>Junior Front End Developer</span></h1>

@@ -55,10 +55,10 @@ class Template extends React.Component {
                                 <div className="col-12">
                                         <div className="contact-wrapper">
                                             <div className="social">
-                                                <a href="#">
+                                                <a href="https://www.linkedin.com/in/lukasz-grzasko/" target="_blank">
                                                     <img className="icon" src="images/icon-linkdin.svg" alt="Linkdin"/>
                                                 </a>
-                                                <a href="#">
+                                                <a href="https://github.com/Luqe302" target="_blank">
                                                     <img className="icon" src="images/icon-github.svg" alt="Github"/>
                                                 </a>
                                             </div>
