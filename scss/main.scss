@@ -85,7 +85,7 @@ nav {
                 display: block;
                 padding: .75rem 0;
                 border-bottom: 1px solid lighten($blackColor, 10%);
-                transition: all .2s;
+                transition: all .5s;
 
                 &:hover {
                     color: $orangeColor;
@@ -370,25 +370,67 @@ footer {
             position: relative;
             z-index: 1;
 
-            .showImage-1 {
+            .sitShowimage-1 {
                 height: 200px;
                 left: 10px;
                 position: relative;
             }
 
-            .showImage-2 {
+            .sitShowimage-2 {
                 width: 200px;
                 top: -6px;
                 position: relative;
             }
 
-            .showImage-3 {
+            .sitShowimage-3 {
                 height: 300px;
                 top: -30px;
                 left: -20px;
                 position: relative;
             }
+
+
+            .furryShowImage-1 {
+                height: 200px;
+                left: -402px;
+                top: -4px;
+                position: relative;
+            }
+
+            .furryShowImage-2 {
+                width: 720px;
+                top: -82px;
+                left: -289px;
+                position: relative;
+            }
+
+            .furryShowImage-3 {
+                height: 250px;
+                top: -10px;
+                left: -120px;
+                position: relative;
+            }
+
+
+        .nasaShowImage-1 {
+            height: 200px;
+            left: 10px;
+            position: relative;
         }
+
+        .nasaShowImage-2 {
+            width: 200px;
+            top: -6px;
+            position: relative;
+        }
+
+        .nasaShowImage-3 {
+            height: 300px;
+            top: -30px;
+            left: -20px;
+            position: relative;
+        }
+    }
 
         &.with-slider {
             top: 11%;
@@ -401,6 +443,22 @@ footer {
         }
 
         &.with-flex {
+            right: calc(5% + 150px);
+            top: 27%;
+        }
+
+
+        &.with-score {
+            top: 13%;
+            left: calc(32% - 150px);
+        }
+
+        &.with-flash {
+            left: calc(37% - 150px);
+            top: 55%;
+        }
+
+        &.with-code {
             right: calc(5% + 150px);
             top: 27%;
         }
@@ -467,20 +525,38 @@ footer {
                 min-width: 150px;
                 height: 150px;
 
-                .showImage-1 {
+                .sitShowimage-1 {
                     height: 150px;
                     left: 10px;
                 }
 
-                .showImage-2 {
+                .sitShowimage-2 {
                     width: 150px;
                     top: -6px;
                 }
 
-                .showImage-3 {
+                .sitShowimage-3 {
                     height: 200px;
                     top: -30px;
                     left: -20px;
+                }
+
+
+                .furryShowImage-1 {
+                    height: 150px;
+                    left: -304px;
+                }
+
+                .furryShowImage-2 {
+                    width: 507px;
+                    top: -61px;
+                    left: -199px;
+                }
+
+                .furryShowImage-3 {
+                    height: 225px;
+                    top: -30px;
+                    left: -110px;
                 }
             }
 
@@ -497,6 +573,22 @@ footer {
             &.with-flex {
                 right: calc(3% + 50px);
                 top: 27%;
+            }
+
+
+            &.with-score {
+                top: 6%;
+                left: calc(27% - 50px);
+            }
+
+            &.with-flash {
+                left: calc(39% - 50px);
+                top: 59%;
+            }
+
+            &.with-code{
+                right: calc(-4% + 50px);
+                top: 18%;
             }
         }
 
@@ -534,6 +626,22 @@ footer {
                 right: calc(-2% + 50px);
                 top: 26%;
             }
+
+
+            &.with-score {
+                top: 0%;
+                left: calc(21% - 50px);
+            }
+
+            &.with-flash {
+                left: calc(33% - 50px);
+                top: 52%;
+            }
+
+            &.with-code{
+                right: calc(-7% + 50px);
+                top: 20%;
+            }
         }
     }
 }
@@ -558,21 +666,40 @@ footer {
                 min-width: 300px;
                 height: 300px;
 
-                .showImage-1 {
+                .sitShowimage-1 {
                     height: 300px;
                     top: -10px;
                     left: 20px;
                 }
 
-                .showImage-2 {
+                .sitShowimage-2 {
                     width: 300px;
                     top: -6px;
                 }
 
-                .showImage-3 {
+                .sitShowimage-3 {
                     height: 400px;
                     top: -40px;
                     left: -20px;
+                }
+
+
+                .furryShowImage-1 {
+                    height: 305px;
+                    left: -616px;
+                    top: -4px;
+                }
+
+                .furryShowImage-2 {
+                    width: 672px;
+                    top: -23px;
+                    left: -217px;
+                }
+
+                .furryShowImage-3 {
+                    height: 307px;
+                    top: -8px;
+                    left: -136px;
                 }
             }
         }

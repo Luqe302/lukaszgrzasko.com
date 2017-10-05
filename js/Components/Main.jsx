@@ -37,9 +37,9 @@ class Main extends React.Component {
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <a href="http://localhost:8080/#/projects">
-                                        <img src="images/project.png" alt="example-image"/>
-                                        <h3>Project name</h3>
+                                    <a href="http://localhost:8080/#/furrygame">
+                                        <img src="images/showcase-furry.png" alt="example-image"/>
+                                        <h3>Furry Game</h3>
                                     </a>
                                 </div>
                             </div>
@@ -47,9 +47,9 @@ class Main extends React.Component {
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <a href="http://localhost:8080/#/projects">
+                                    <a href="http://localhost:8080/#/sitonchair">
                                         <img src="images/showcase-top-sit.png" alt="example-image"/>
-                                        <h3>Project name</h3>
+                                        <h3>SitOnChair</h3>
                                     </a>
                                 </div>
                             </div>
@@ -57,9 +57,9 @@ class Main extends React.Component {
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <a href="http://localhost:8080/#/projects">
-                                        <img src="images/project.png" alt="example-image"/>
-                                        <h3>Project name</h3>
+                                    <a href="http://localhost:8080/#/nasaapichallange">
+                                        <img src="images/showcase-nasa.png" alt="example-image"/>
+                                        <h3>Nasa API Challange</h3>
                                     </a>
                                 </div>
                             </div>
