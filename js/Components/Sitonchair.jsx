@@ -3,6 +3,9 @@ import React from 'react'
 class Sitonchair extends React.Component {
     render() {
         return <div className="project-page">
+            <a className="return-arrow-container"  href="#">
+                    <div className="return-arrow"></div>
+            </a>
             <div className="container">
                 <div className="row">
                     <div className="col-12">

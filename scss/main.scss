@@ -10,7 +10,6 @@ body {
     &.active-menu {
         transform: translateX(calc(-100% + 25px + 1.5rem));
     }
-
 }
 
 h1 {
@@ -232,19 +231,12 @@ nav {
     display: flex;
     justify-content: center;
 
+    .project-site-circle {
+        @include project-circle;
+    }
+
     .each-project {
-        min-width: 300px;
-        max-width: 300px;
-        height: 300px;
-        @include circle-box;
-        border-top: 2px solid $greyColor;
-        border-left: 2px solid $greyColor;
-        border-right: 2px solid $bgDarkerColor;
-        border-bottom: 2px solid $bgDarkerColor;
-        overflow: hidden;
-        margin-bottom: 2rem;
-        position: relative;
-        transition: all 1s;
+        @include project-circle;
 
         a {
             display: flex;
@@ -262,7 +254,6 @@ nav {
 
             &::after {
                 content: "";
-                // background: rgba($blackColor, .6);
                 position: absolute;
                 z-index: 1;
                 width: 100%;
@@ -350,6 +341,53 @@ footer {
 
 
 //Projects
+.return-arrow-container {
+    position: absolute;
+    padding: 10px;
+    top: .5%;
+    left: 1%;
+
+    .return-arrow {
+        position: relative;
+        height: 0px; width: 0px;
+        border: 10px solid;
+        border-color:
+            $blackColor
+            $blackColor
+            transparent
+            transparent;
+        transform: rotate(225deg);
+        transition: all .5s;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px; right: 0px;
+            display: block;
+            height: 10px; width: 13px;
+            background-color: $blackColor;
+            transform:
+                rotate(-45deg)
+                translate(2px, 1px);
+            transition: all .5s;
+        }
+    }
+
+    &:hover {
+
+        .return-arrow {
+            border-color:
+                $orangeColor
+                $orangeColor
+                transparent
+                transparent;
+
+            &::before {
+                background-color: $orangeColor;
+            }
+        }
+    }
+}
 
 .first-picture-wrapper {
     display: flex;
@@ -377,6 +415,14 @@ footer {
             &.flex-description {
                 bottom: -4%;
             }
+        }
+
+        .project-site-circle {
+            max-width: 200px;
+            min-width: 200px;
+            height: 200px;
+            position: relative;
+            z-index: 1;
         }
 
         .each-project {
