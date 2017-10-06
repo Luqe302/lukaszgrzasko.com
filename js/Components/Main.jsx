@@ -15,8 +15,8 @@ class Main extends React.Component {
                                 <div className="slogan muted-text">front-end developer that focuses on using HTML, CSS and Javascript to build beautiful websites and user-friendly environments for web applications</div>
                                 <h1>I'm a <span>Junior Front End Developer</span></h1>
                                 <div className="contact">
-                                    <a className="muted-text" href='#'>lukasz.grzasko@hotmail.com</a>
-                                    <a className="muted-text" href='#'>+48 736 901 399</a>
+                                    <a className="muted-text" href='mailto:lukasz.grzasko@hotmail.com'>lukasz.grzasko@hotmail.com</a>
+                                    <a className="muted-text" href='tel:+48736901399'>+48 736 901 399</a>
                                 </div>
                             </div>
                         </div>

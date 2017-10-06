@@ -63,10 +63,10 @@ class Template extends React.Component {
                                                 </a>
                                             </div>
                                             <div className="contact">
-                                                <a href="#">
+                                                <a href="mailto:lukasz.grzasko@hotmail.com">
                                                     <img className="icon" src="images/icon-message.svg" alt="e-mail"/>
                                                 </a>
-                                                <a href="#">
+                                                <a href="tel:+48736901399">
                                                     <img className="icon" src="images/icon-phone.svg" alt="phone"/>
                                                 </a>
                                             </div>
