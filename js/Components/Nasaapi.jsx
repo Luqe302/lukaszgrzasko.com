@@ -46,8 +46,8 @@ class Nasaapi extends React.Component {
                 <div className="row">
                     <div className="col-12">
                         <div className="btn-wrapper">
-                            <a className="project-btn" href="#">Code preview</a>
-                            <a className="project-btn" href="#">Live preview</a>
+                            <a className="project-btn" href="https://github.com/Luqe302/NASA-API-Challenge" target="_blank">Code preview</a>
+                            <a className="project-btn" href="https://luqe302.github.io/NASA-API-Challenge/" target="_blank">Live preview</a>
                         </div>
                     </div>
                 </div>

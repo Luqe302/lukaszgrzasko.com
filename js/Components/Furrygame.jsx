@@ -46,8 +46,8 @@ class Furrygame extends React.Component {
                 <div className="row">
                     <div className="col-12">
                         <div className="btn-wrapper">
-                            <a className="project-btn" href="#">Code preview</a>
-                            <a className="project-btn" href="#">Live preview</a>
+                            <a className="project-btn" target="_blank" href="https://github.com/Luqe302/furry-game">Code preview</a>
+                            <a className="project-btn" href="https://luqe302.github.io/furry-game/" target="_blank">Live preview</a>
                         </div>
                     </div>
                 </div>
