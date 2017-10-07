@@ -28,13 +28,13 @@ class Sitonchair extends React.Component {
                             <div className="project-wrapper with-prizes">
                                 <span className="mobile-description">Responsywny layout </span>
                                 <div className="project-site-circle">
-                                    <img className="sitShowImage-2" src="images/responsive-mobile-view.png" alt="mobile-view"/>
+                                    <img className="sitShowImage-2" src="images/responsive-mobile-view.jpg" alt="mobile-view"/>
                                 </div>
                             </div>
                             <div className="project-wrapper with-flex">
                                 <span className="flex-description">Flexbox grid</span>
                                 <div className="project-site-circle">
-                                    <img className="sitShowImage-3" src="images/flexbox-layout.png" alt="flexbox-layout"/>
+                                    <img className="sitShowImage-3" src="images/flexbox-layout.jpg" alt="flexbox-layout"/>
                                 </div>
                             </div>
                             <div className="first-picture">

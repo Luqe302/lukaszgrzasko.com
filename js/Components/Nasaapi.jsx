@@ -22,13 +22,13 @@ class Nasaapi extends React.Component {
                             <div className="project-wrapper with-ajax">
                                 <span className="slider-description">"Load more" z AJAX'em</span>
                                 <div className="project-site-circle">
-                                    <img className="nasaShowImage-1" src="images/nasa-load.png" alt="responsive-slider"/>
+                                    <img className="nasaShowImage-1" src="images/nasa-load.jpg" alt="responsive-slider"/>
                                 </div>
                             </div>
                             <div className="project-wrapper with-api">
                                 <span className="mobile-description">Pobieranie zdjęć z API </span>
                                 <div className="project-site-circle">
-                                    <img className="nasaShowImage-2" src="images/nasa-code.png" alt="mobile-view"/>
+                                    <img className="nasaShowImage-2" src="images/nasa-code.jpg" alt="mobile-view"/>
                                 </div>
                             </div>
                             <div className="project-wrapper with-popup">
