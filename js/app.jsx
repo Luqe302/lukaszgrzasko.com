@@ -12,7 +12,7 @@ import '../scss/styles.scss'
 
 document.addEventListener('DOMContentLoaded', function(){
     ReactDOM.render(
-        <Router history={hashHistory}>
+        <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
             <Route path="/" component={Template}>
                 <IndexRoute component={Main} />
                 <Route path="/sitonchair" component={Sitonchair} />

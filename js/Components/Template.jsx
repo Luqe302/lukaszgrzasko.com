@@ -37,7 +37,6 @@ class Template extends React.Component {
                                 </li>
                             </ul>
                         </li>
-                        <li onClick={this.toggleMenu}><a href="#">Kontakt</a></li>
                     </ul>
                 </div>
             </nav>
