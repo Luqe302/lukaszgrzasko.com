@@ -10,7 +10,7 @@ class Nasaapi extends React.Component {
                 <div className="row">
                     <div className="col-12">
                         <div className="project-title">
-                            <h2>Nasa API Challange</h2>
+                            <h2>Nasa API challenge</h2>
                         </div>
                     </div>
                 </div>
@@ -20,19 +20,19 @@ class Nasaapi extends React.Component {
                     <div className="col-12">
                         <div className="first-picture-wrapper">
                             <div className="project-wrapper with-ajax">
-                                <span className="slider-description">"Load more" z AJAX'em</span>
+                                <span className="slider-description">"Load more" in AJAX</span>
                                 <div className="project-site-circle">
                                     <img className="nasaShowImage-1" src="images/nasa-load.jpg" alt="responsive-slider"/>
                                 </div>
                             </div>
                             <div className="project-wrapper with-api">
-                                <span className="mobile-description">Pobieranie zdjęć z API </span>
+                                <span className="mobile-description">Fetching images with API </span>
                                 <div className="project-site-circle">
                                     <img className="nasaShowImage-2" src="images/nasa-code.jpg" alt="mobile-view"/>
                                 </div>
                             </div>
                             <div className="project-wrapper with-popup">
-                                <span className="flex-description">"Popup" przy podglądzie</span>
+                                <span className="flex-description">View in "Popup" </span>
                                 <div className="project-site-circle">
                                     <img className="nasaShowImage-3" src="images/nasa-popup.jpg" alt="flexbox-layout"/>
                                 </div>
@@ -46,8 +46,8 @@ class Nasaapi extends React.Component {
                 <div className="row">
                     <div className="col-12">
                         <div className="btn-wrapper">
-                            <a className="project-btn" href="https://github.com/Luqe302/NASA-API-Challenge" target="_blank">Code preview</a>
-                            <a className="project-btn" href="https://luqe302.github.io/NASA-API-Challenge/" target="_blank">Live preview</a>
+                            <a className="project-btn" href="https://github.com/Luqe302/NASA-API-Challenge" target="_blank">Code review</a>
+                            <a className="project-btn" href="https://luqe302.github.io/NASA-API-Challenge/" target="_blank">Demo preview</a>
                         </div>
                     </div>
                 </div>

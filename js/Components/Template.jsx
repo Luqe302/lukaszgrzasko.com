@@ -27,8 +27,8 @@ class Template extends React.Component {
             <nav id="mainNav" className="main-navigation-wrapper">
                 <div className="menu-wrapper">
                     <ul>
-                        <li onClick={this.toggleMenu}><a href="#/">Strona Główna</a></li>
-                        <li><a className="unclickable-link" href="#">Projekty</a>
+                        <li onClick={this.toggleMenu}><a href="#/">Home</a></li>
+                        <li><a className="unclickable-link" href="#">Projects</a>
                             <ul onClick={this.toggleMenu}>
                                 <li>
                                     <a href="#/furrygame">FurryGame</a>
@@ -37,7 +37,7 @@ class Template extends React.Component {
                                     <a href="#/sitonchair">SitOnChair</a>
                                 </li>
                                 <li>
-                                    <a href="#/nasaapichallange">NasaAPIChallenge</a>
+                                    <a href="#/nasaapichallenge">NasaAPIChallenge</a>
                                 </li>
                             </ul>
                         </li>

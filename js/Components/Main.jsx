@@ -29,7 +29,7 @@ class Main extends React.Component {
                     <div className="row">
                         <div className="col-12">
                             <div className="project-title">
-                                <h2>Wybrane projekty</h2>
+                                <h2>Selected projects</h2>
                             </div>
                         </div>
                     </div>
@@ -57,9 +57,9 @@ class Main extends React.Component {
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <a href="#/nasaapichallange">
+                                    <a href="#/nasaapichallenge">
                                         <img src="images/showcase-nasa.png" alt="example-image"/>
-                                        <h3>Nasa API Challange</h3>
+                                        <h3>Nasa API Challenge</h3>
                                     </a>
                                 </div>
                             </div>

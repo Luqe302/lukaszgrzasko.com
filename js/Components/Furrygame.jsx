@@ -20,19 +20,19 @@ class Furrygame extends React.Component {
                     <div className="col-12">
                         <div className="first-picture-wrapper">
                             <div className="project-wrapper with-score">
-                                <span className="slider-description">Punktacja i poziomy trudności</span>
+                                <span className="slider-description">Scoring and difficult levels</span>
                                 <div className="project-site-circle">
                                     <img className="furryShowImage-1" src="images/furry-score.jpg" alt="responsive-slider"/>
                                 </div>
                             </div>
                             <div className="project-wrapper with-flash">
-                                <span className="mobile-description">Animacje CSS</span>
+                                <span className="mobile-description">CSS animations</span>
                                 <div className="project-site-circle">
                                     <img className="furryShowImage-2" src="images/furry-flash.jpg" alt="mobile-view"/>
                                 </div>
                             </div>
                             <div className="project-wrapper with-code">
-                                <span className="flex-description">Obiektowa konstrukcja gry</span>
+                                <span className="flex-description">Object oriented programing</span>
                                 <div className="project-site-circle">
                                     <img className="furryShowImage-3" src="images/furry-code.jpg" alt="flexbox-layout"/>
                                 </div>
@@ -46,8 +46,8 @@ class Furrygame extends React.Component {
                 <div className="row">
                     <div className="col-12">
                         <div className="btn-wrapper">
-                            <a className="project-btn" target="_blank" href="https://github.com/Luqe302/furry-game">Code preview</a>
-                            <a className="project-btn" href="https://luqe302.github.io/furry-game/" target="_blank">Live preview</a>
+                            <a className="project-btn" target="_blank" href="https://github.com/Luqe302/furry-game">Code review</a>
+                            <a className="project-btn" href="https://luqe302.github.io/furry-game/" target="_blank">Demo preview</a>
                         </div>
                     </div>
                 </div>

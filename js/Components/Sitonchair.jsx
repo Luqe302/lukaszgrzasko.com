@@ -20,13 +20,13 @@ class Sitonchair extends React.Component {
                     <div className="col-12">
                         <div className="first-picture-wrapper">
                             <div className="project-wrapper with-slider">
-                                <span className="slider-description">Dynamiczny slider</span>
+                                <span className="slider-description">Dynamic slider</span>
                                 <div className="project-site-circle">
                                     <img className="sitShowImage-1" src="images/responsive-slider.jpg" alt="responsive-slider"/>
                                 </div>
                             </div>
                             <div className="project-wrapper with-prizes">
-                                <span className="mobile-description">Responsywny layout </span>
+                                <span className="mobile-description">Responsive layout </span>
                                 <div className="project-site-circle">
                                     <img className="sitShowImage-2" src="images/responsive-mobile-view.jpg" alt="mobile-view"/>
                                 </div>
@@ -46,8 +46,8 @@ class Sitonchair extends React.Component {
                 <div className="row">
                     <div className="col-12">
                         <div className="btn-wrapper">
-                            <a className="project-btn" href="https://github.com/Luqe302/Sit-on-chair-CodersLab" target="_blank">Code preview</a>
-                            <a className="project-btn" href="https://luqe302.github.io/Sit-on-chair-CodersLab/" target="_blank">Live preview</a>
+                            <a className="project-btn" href="https://github.com/Luqe302/Sit-on-chair-CodersLab" target="_blank">Code review</a>
+                            <a className="project-btn" href="https://luqe302.github.io/Sit-on-chair-CodersLab/" target="_blank">Demo preview</a>
                         </div>
                     </div>
                 </div>

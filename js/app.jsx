@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import Template from './Components/Template.jsx';
 import Main from './Components/Main.jsx';
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
             <Route path="/" component={Template}>
                 <IndexRoute component={Main} />
                 <Route path="/sitonchair" component={Sitonchair} />
-                <Route path="/nasaapichallange" component={Nasaapi} />
+                <Route path="/nasaapichallenge" component={Nasaapi} />
                 <Route path="/furrygame" component={Furrygame} />
             </Route>
         </Router>,
