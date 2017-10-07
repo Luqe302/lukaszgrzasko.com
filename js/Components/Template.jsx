@@ -9,13 +9,17 @@ class Template extends React.Component {
     }
 
     toggleMenu = () => {
-
+        var html = document.querySelector('html');
         var body = document.querySelector('body');
         body.className = this.isActiveMenu ? '' : 'active-menu';
 
-        this.isActiveMenu = !this.isActiveMenu;
+        setTimeout(function () {
+            html.style.overflowX = this.isActiveMenu ? 'hidden' : '';
+        }, 220);
 
+        this.isActiveMenu = !this.isActiveMenu;
     };
+
 
     render() {
 
@@ -23,17 +27,17 @@ class Template extends React.Component {
             <nav id="mainNav" className="main-navigation-wrapper">
                 <div className="menu-wrapper">
                     <ul>
-                        <li onClick={this.toggleMenu}><a href="http://localhost:8080/#/">Strona Główna</a></li>
+                        <li onClick={this.toggleMenu}><a href="#/">Strona Główna</a></li>
                         <li><a className="unclickable-link" href="#">Projekty</a>
                             <ul onClick={this.toggleMenu}>
                                 <li>
-                                    <a href="http://localhost:8080/#/furrygame">FurryGame</a>
+                                    <a href="#/furrygame">FurryGame</a>
                                 </li>
                                 <li>
-                                    <a href="http://localhost:8080/#/sitonchair">SitOnChair</a>
+                                    <a href="#/sitonchair">SitOnChair</a>
                                 </li>
                                 <li>
-                                    <a href="http://localhost:8080/#/nasaapichallange">NasaAPIChallenge</a>
+                                    <a href="#/nasaapichallange">NasaAPIChallenge</a>
                                 </li>
                             </ul>
                         </li>

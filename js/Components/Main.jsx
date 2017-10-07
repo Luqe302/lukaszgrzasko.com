@@ -37,7 +37,7 @@ class Main extends React.Component {
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <a href="http://localhost:8080/#/furrygame">
+                                    <a href="#/furrygame">
                                         <img src="images/showcase-furry.png" alt="example-image"/>
                                         <h3>Furry Game</h3>
                                     </a>
@@ -47,7 +47,7 @@ class Main extends React.Component {
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <a href="http://localhost:8080/#/sitonchair">
+                                    <a href="#/sitonchair">
                                         <img src="images/showcase-top-sit.png" alt="example-image"/>
                                         <h3>Sit On Chair</h3>
                                     </a>
@@ -57,7 +57,7 @@ class Main extends React.Component {
                         <div className="col-12 col-lg-4">
                             <div className="project-wrapper">
                                 <div className="each-project">
-                                    <a href="http://localhost:8080/#/nasaapichallange">
+                                    <a href="#/nasaapichallange">
                                         <img src="images/showcase-nasa.png" alt="example-image"/>
                                         <h3>Nasa API Challange</h3>
                                     </a>

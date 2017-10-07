@@ -1,10 +1,10 @@
 body {
+    overflow-x: hidden;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     color: $greyColor;
     line-height: 1.5;
     background: $bgColor;
-    overflow-x: hidden;
     transition: all .2s;
 
     &.active-menu {
@@ -815,65 +815,10 @@ footer {
 }
 
 @media (max-width: 575px) {
+
     .project-title {
         margin-bottom: 2rem;
     }
-
-    .first-picture-wrapper {
-
-        .project-wrapper {
-
-            &.with-slider {
-                top: -4%;
-                left: calc(31% - 50px);
-            }
-
-            &.with-prizes {
-                left: calc(29% - 50px);
-                top: 55%;
-            }
-
-            &.with-flex {
-                right: calc(-2% + 50px);
-                top: 26%;
-            }
-
-
-            &.with-score {
-                top: 0%;
-                left: calc(21% - 50px);
-            }
-
-            &.with-flash {
-                left: calc(33% - 50px);
-                top: 52%;
-            }
-
-            &.with-code{
-                right: calc(5% + 50px);
-                top: 4%;
-            }
-
-
-            &.with-api {
-                left: calc(33% - 50px);
-                top: 52%;
-            }
-
-            &.with-ajax {
-                top: 0%;
-                left: calc(21% - 50px);
-            }
-
-            &.with-popup{
-                right: calc(0% + 50px);
-                top: -1%;
-            }
-        }
-    }
-}
-
-@media (max-width: 479px) {
 
     .first-picture-wrapper {
         flex-direction: column-reverse;
@@ -886,6 +831,8 @@ footer {
             span {
                 position: static;
                 margin-bottom: 1rem;
+                white-space: normal;
+                text-align: center;
             }
 
             .project-site-circle {
