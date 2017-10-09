@@ -32,7 +32,7 @@ class Furrygame extends React.Component {
                                 </div>
                             </div>
                             <div className="project-wrapper with-code">
-                                <span className="flex-description">Object oriented programing</span>
+                                <span className="flex-description">Object oriented programming</span>
                                 <div className="project-site-circle">
                                     <img className="furryShowImage-3" src="images/furry-code.jpg" alt="flexbox-layout"/>
                                 </div>

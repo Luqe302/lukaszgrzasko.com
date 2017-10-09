@@ -9,13 +9,12 @@ class Template extends React.Component {
     }
 
     toggleMenu = () => {
-        var html = document.querySelector('html');
-        var body = document.querySelector('body');
-        body.className = this.isActiveMenu ? '' : 'active-menu';
+        var nav = document.querySelector('#mainNav');
+        var menuToggler = document.querySelector('.menu-toggler');
 
-        setTimeout(function () {
-            html.style.overflowX = this.isActiveMenu ? 'hidden' : '';
-        }, 220);
+        this.isActiveMenu ? nav.classList.remove("active-menu") : nav.classList.add("active-menu");
+
+        this.isActiveMenu ? menuToggler.classList.remove("active-menu") : menuToggler.classList.add("active-menu");
 
         this.isActiveMenu = !this.isActiveMenu;
     };

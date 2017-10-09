@@ -1,15 +1,15 @@
-body {
+
+html, body {
     overflow-x: hidden;
+}
+
+body {    
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     color: $greyColor;
     line-height: 1.5;
     background: $bgColor;
     transition: all .2s;
-
-    &.active-menu {
-        transform: translateX(calc(-100% + 25px + 1.5rem));
-    }
 }
 
 h1 {
@@ -100,6 +100,10 @@ nav {
             }
         }
     }
+
+    &.active-menu {
+        transform: translateX(0);
+    }
 }
 
 .menu-toggler {
@@ -158,6 +162,17 @@ nav {
             position: relative;
             top: 12px;
             transition: all .5s;
+        }
+    }
+
+    &.active-menu {
+        span, span::before, span::after {
+            background: $bgColor;
+        }
+        &:hover {
+            span, span::before, span::after {
+                background: $orangeColor;
+            }
         }
     }
 }
