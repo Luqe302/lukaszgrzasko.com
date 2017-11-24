@@ -46,8 +46,8 @@ class Sitonchair extends React.Component {
                 <div className="row">
                     <div className="col-12">
                         <div className="btn-wrapper">
-                            <a className="project-btn" href="https://github.com/Luqe302/Sit-on-chair-CodersLab" target="_blank">Code review</a>
-                            <a className="project-btn" href="https://luqe302.github.io/Sit-on-chair-CodersLab/" target="_blank">Demo review</a>
+                            <a className="project-btn" href="https://github.com/Luqe302/Sit-on-chair-CodersLab" target="_blank">GitHub</a>
+                            <a className="project-btn" href="https://luqe302.github.io/Sit-on-chair-CodersLab/" target="_blank">Demo</a>
                         </div>
                     </div>
                 </div>
