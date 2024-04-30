@@ -1,1 +1,1 @@
-# lukaszgrzasko.com - My personnal portfolio
+# My personnal portfolio
